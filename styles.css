@@ -11,7 +11,9 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: Roboto, sans-serif;
 }
+
 /* Section Border Tracking */
 
 .nav-bar {
@@ -19,11 +21,25 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
+    position: fixed;
+
+
 }
 navbar {
     border: 4px solid orange;
     width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top:10px;
+    padding-bottom: 10px;
 }
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin: 20px;
+}
+
 .welcome-section {
     border: 4px solid blue;
     height: 100vh;
@@ -41,6 +57,7 @@ navbar {
 .welcome-message {
     border: 4px solid red;
     width: 80%;
+    font-size: 36px;
 
 }
 .project-section {
@@ -64,17 +81,39 @@ navbar {
 .project-intro{
     margin-top: 5%;
     border: 4px solid red;
+    font-size: 36px;
 }
-.project-list {
+.project-tile {
     border: 4px solid red;
     height: 80%;
     width: 80%;
     margin-bottom: 5%;
 }
-.Contact {
+ .Contact {
     border: 4px solid blue;
     width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-section {
+    border: 4px solid orange;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contact-info {
+    border: 4px solid red;
+    height: 20%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
 }
 
 footer {
